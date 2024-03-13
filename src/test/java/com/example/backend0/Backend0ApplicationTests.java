@@ -17,21 +17,20 @@ class Backend0ApplicationTests { // 여기서 data 잘 들어가나 test 할 수
 
 	@Test
 	void addUserTest() {
-		User user=new User();
+		User user = new User();
 		user.setId("parangggg");
 		user.setPassword("123456");
-
 		userDao.save(user);
 	}
 
-	/*@Test
-	void getAllUsersAndDeleteThem(){
-		List<User> users= userDao.getAllUsers(); // 받아온 걸 users에 저장해서
-		for (User user: users){
-			userDao.delete(user); // 다 지움
+	@Test
+	void getAllUsersAndDeleteThem() {
+		List<User> users = userDao.getAllUsers(); // 받아온 걸 users에 저장해서
+		for (User user : users) {
+			userDao.delete(user.getId()); // 다 지움
 		}
-
-	 */
 	}
+}
+
 
 

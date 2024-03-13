@@ -14,25 +14,21 @@ public class UserDao { // auto-writing / Data Access Object
 
 
 	public User save(User user){
-		return repository.save(user); // repository 함수가 다 자동으로 해줌
+		repository.save(user); // repository 함수가 다 자동으로 해줌
 		//return user;
+		return user;
 	}
 
 	public List<User> getAllUsers(){
-		List<User> users=new ArrayList<>();
+		List<User> users = new ArrayList<>();
 		Streamable.of(repository.findAll()).
 				forEach(users::add);
-
 		return users;
 	}
 
-	public void delete(String id){
-		repository.deleteById(id);
+	public void delete(String userId){
+		repository.deleteById(userId);
 	}
-
-	//public void deleteById(String id){
-		//repository.deleteById(id);
-	//}
 
 
 }

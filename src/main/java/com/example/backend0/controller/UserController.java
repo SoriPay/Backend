@@ -18,7 +18,6 @@ public class UserController {
 
 	@GetMapping("/user/get-all") // 나중에 android에서 요청할 때
 	public List<User> getAllUsers(){
-
 		return userDao.getAllUsers();
 	}
 
@@ -26,6 +25,7 @@ public class UserController {
 	@PostMapping("/user/save")
 	public User save(@RequestBody User user){ // @RequestBody로 data 받아옴
 		return userDao.save(user);
+
 	}
 
 }
