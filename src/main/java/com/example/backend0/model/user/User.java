@@ -8,11 +8,12 @@ import jakarta.persistence.GenerationType;
 public class User {
 
 	@Id
-	//@GeneratedValue(strategy = GenerationType.IDENTITY) // 여기서는 increasing key로 primary key를 자동생성해주지만, 나는 id를 primary key로 생성해줬기 때문에 필요없다
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	// 여기서는 increasing key로 primary key를 자동생성해주지만, 나는 id를 primary key로 생성해줬기 때문에 필요없다
 	//private String name;
+
 	private String id; // 이게 id
 	private String password;
-	//private String passwordCheck;
 
 	public String getId() {
 		return id;
@@ -23,7 +24,7 @@ public class User {
 	}
 
 	public String getPassword() {
-		return id;
+		return password;
 	}
 
 	public void setPassword(String password) {
@@ -33,7 +34,9 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User{" + "id='" + id + '\'' + "password='" + password +
+		return "User{" +
+				"id=" + id + '\'' +
+				", password='" + password +
 				'}';
 	}
 }
