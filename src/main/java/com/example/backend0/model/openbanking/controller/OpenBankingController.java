@@ -1,4 +1,6 @@
+/*
 package com.example.backend0.model.openbanking.controller;
+
 import com.example.backend0.model.openbanking.dto.AccountListDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -34,3 +36,5 @@ public class OpenBankingController {
 		return openBankingFeign.requestAccountList("Bearer " + access_token, user_seq_no, include_cancel_yn, sort_order);
 	}
 }
+
+ */

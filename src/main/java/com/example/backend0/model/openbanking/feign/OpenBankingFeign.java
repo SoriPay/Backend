@@ -1,4 +1,4 @@
-package com.example.backend0.model.openbanking.feign;
+/*package com.example.backend0.model.openbanking.feign;
 
 import com.example.backend0.model.openbanking.dto.AccountBalanceDto;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
@@ -53,3 +53,6 @@ public interface OpenBankingFeign {
 			@RequestParam("sort_order") String sort_order,
 			@RequestParam("tran_dtime") String tran_dtime);
 }
+
+
+*/
