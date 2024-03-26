@@ -36,7 +36,7 @@ public class UserController {
 
 
 
-	@PostMapping("user/login")
+	/*@PostMapping("user/login")
 	public LoginResponse login(@RequestBody LoginRequest request) {
 		User user = userDao.findByUsername(request.getUsername());
 		if (user != null && user.getPassword().equals(request.getPassword())) {
@@ -45,5 +45,7 @@ public class UserController {
 			return new LoginResponse(false, "아이디 또는 비밀번호가 올바르지 않습니다.");
 		}
 	}
+
+	 */
 }
 

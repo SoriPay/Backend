@@ -30,16 +30,16 @@ public class UserDao { // auto-writing / Data Access Object
 		repository.deleteById(userId);
 	}
 
-	public User findByUsername(String username) {
-		return repository.findByUsername(username);
-	}
+	//public User findByUsername(String username) {
+		//return repository.findByUsername(username);
+	//}
 
 
 
 
-	public boolean authenticateUser(String id, String password) {
-		User user = findByUsername(id);
-		return user != null && user.getPassword().equals(password);
-	}
+	//public boolean authenticateUser(String id, String password) {
+	//	User user = findByUsername(id);
+		//return user != null && user.getPassword().equals(password);
+	//}
 }
 
