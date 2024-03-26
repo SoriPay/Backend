@@ -39,6 +39,7 @@ public class Login {
 				// 로그인 실패
 				System.out.println("로그인 실패");
 				response.put("UID", -1);
+				//dd
 			} else {
 				// 로그인 성공
 				System.out.println("로그인 성공");
